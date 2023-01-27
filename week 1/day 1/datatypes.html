@@ -1,0 +1,34 @@
+<!-- JavaScript has 8 Datatypes
+1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Object
+8. date-->
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a="hello" //string
+        let b=10;//number 
+        let c=123456789012345678901234567890; //number but bigInt
+        let d=true; //boolean
+        let e=undefined; //undefined
+        let f=null; //object with null value
+        let g={a:"b", c:"d", e:"f", g:"h"};//object with 4 properties a,c,e,g
+        let h=Number.isSafeInteger(c); //false as it is BigInt 
+
+        document.write(typeof(a)+" ",typeof(b)+" ",typeof(c)+" ",typeof(d)+" ",typeof(e)+" ",typeof(f)+" ",typeof(g)+" ",h);
+
+
+    </script>
+</body>
+</html>

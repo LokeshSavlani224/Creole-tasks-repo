@@ -1,0 +1,58 @@
+<!-- there are 4 ways to represent variables in JS:- 
+1. let
+2. const
+3. var
+4. using nothing -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var a="hello";
+        let b=true;
+        const c=9;
+
+        var a=10;
+        // let b=false;  // it will not execute because let has block as its scope
+        //const c=11; //not execute as has block as its scope
+
+        var a=10;
+        {
+            var a=9;//allowed
+            var a=8;//allowed
+            document.write(a+" ");
+        }
+
+        let e=3;
+        {
+            let e=4; //allowed
+            document.write(e+" ");
+            //let e=5; //not allowed
+        }
+
+        const f=4;
+        {
+            const f=5; //allowed
+            document.write(f+" ")
+            //const f=6; //not allowed
+        }
+
+        var g;//undefined
+        let h;//undefined
+       // const i; // not allowed
+
+       j=10;
+
+        document.write(a+" ",e+" ",f+" ",g+" ",h+" ",j);
+
+    </script>
+
+</body>
+</html>

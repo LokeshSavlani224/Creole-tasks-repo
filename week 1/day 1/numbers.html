@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Number Methods</h2>
+
+<p>The toPrecision() method returns a string, with a number written with a specified length:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 9.656;
+document.getElementById("demo").innerHTML = 
+  x.toPrecision(1) + "<br>" +
+  x.toPrecision(2) + "<br>" +
+  x.toPrecision(4) + "<br>" +
+  x.toPrecision(6);  
+
+  let y = 123;
+  y.toString();
+  document.write(y+"<br> \n");
+
+  let z = 9.656;
+  z.toExponential(2);
+  document.write(z+"<br>");
+
+  let a=9.565;
+  a.toFixed(2);
+  document.write(a+"<br>");
+
+</script>
+
+</body>
+</html>

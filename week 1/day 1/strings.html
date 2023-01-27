@@ -1,0 +1,61 @@
+<!-- JavaScript strings are for storing and manipulating text -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a="double quoted";
+        let b="single quoted";
+        let c=`backticks`; //you can use ${} in backticks
+        let d=`hello ${1+3}`;//hello 4 (string interpolation is done using ${})
+
+       //for length of string
+        document.write(d.length +"<br>"); 
+        
+        
+       //for slice method
+        let e=b.slice(7,13);
+        let f=b.slice(6);
+        let g=b.slice(-5);
+        document.write(e+" <br> ",f+"<br>  ",g+"<br>  ");
+       
+        //for substr()
+        let h=b.substr(6,7);//7 values after 6th positionn are printed
+        document.write(h+"<br>  ");
+
+        
+        //for replace()
+        let i=b.replace("single","xyz");
+        document.write(i+" <br> ");
+
+        //for replaceAll()
+        let j=b.replaceAll("e" , " x ");
+        document.write(j+" <br> ");
+
+        //for toLowerCase()
+        let k=a.toLowerCase();
+        document.write(k+"<br>  ");
+
+        //for toUpperCase()
+        let l=a.toUpperCase();
+        document.write(l+"<br> ");
+
+        //for concat()
+        let m=c.concat(" abc ",b);
+        document.write(m+" <br> ");
+
+        //for split()
+        let n=c.split("");
+        document.write(n+" <br> ");
+
+
+
+
+    </script>
+</body>
+</html>

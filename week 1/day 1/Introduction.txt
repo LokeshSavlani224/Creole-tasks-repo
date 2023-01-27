@@ -1,0 +1,41 @@
+
+=>JavaScript was initially created to “make web pages alive”.
+ programs in this language are called scripts. They can be written right in a web page’s HTML and run automatically as the page loads.
+     
+ =>JavaScript was initially known as LiveScript which was created by Netscape in 1995 As a Scripting language in company's 
+flagship browser.
+
+=>Later it was Named JavaSript as a supportive language for the very popular language java which was the language
+of their very own partners Sun Microsystems.
+
+=> Many web browser included JavaScript in their browsers
+
+=>Still if any browser had to run webpages they had to use javascript language.
+
+=>In 2008 Google's open source Chrome V8 which was a high performance javascript engine which created a turning point for JS.
+
+=>until node.js was not introduced which provides an open-source cross platform Environment.It provided a way to run JS code from 
+outside the browser.
+
+
+
+=>ES:ECMAScript is a JavaScript Language introduced in 1977. ECMA-262 specification is a standard of Javascript language
+Es1 Es2 Es3 1997-1999
+ES5 2009
+ES6 2015
+ yearly additions 2016 2017 2018
+
+Generally 2 editors are used: IDEs and light weight editors
+ IDE:Integrated development environment- they are the powerful editors used nowadays
+ Ex: Vs code or WebStorm(VS Code is cross platform free where as webstrom is paid)
+Light weight editors are not so powerful as IDEs but bthe are fast and simple
+Ex:Sublime Text,Notepad++,Vim and Emacs etc....
+
+
+
+
+
+ 
+
+
+
