@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>there r 3 ways to define a function <br>
+        1. function declaration<br>
+        2. anonymous function/ function expression<br>
+        3. immediately invoked function
+        4. arrow function<br></p>
+    <p id="x"></p>
+    <script>
+        //function declaration
+        let b=oddOrEven(87);
+        document.getElementById("x").innerHTML = b;
+        function oddOrEven(t) {
+        if(t % 2==0){
+            return" Even no.";
+        }
+        else{
+            return "Odd no.";
+         }
+        }
+
+        //function expression
+        let mul=function(a,b){
+            return a*b;
+        }
+        document.write(mul(3,4));
+
+        //IIFE i.e Immediately invoked function expression
+        let c=function(){
+        document.write("<br><br>IIFE function called ");
+        }();
+
+        // arrow function
+        let add = (a,b) => a+b;
+        document.write("<br><br>the addition is " + add(3,4));
+    </script>
+</body>
+</html>

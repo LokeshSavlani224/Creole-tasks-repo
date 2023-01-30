@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+
+       //for loo[p]
+       let i=0;
+       let v="";
+
+        for(i ; i<10 ; i++){
+           v += i;
+        }
+         document.write(" for loop:-" +i+" ");
+            
+
+        //for/in loop
+        let arr=[1 , 2 , 3 , 4 , 5];
+        let b = " "
+        for(i in arr ){
+            b += arr[i]+"  ";
+        }
+        document.write( "<br>for/in loop :-" + b);
+
+
+        //forEach loop 
+        let num=[49 , 22 , 55 , 66 , 99];
+        let txt = " ";
+
+        num.forEach(myFunc);
+       
+       function myFunc(value , index , array){
+         txt += value+" ";
+        }
+        document.write("<br>forEach loop"+ txt);
+        
+
+        //for/of loop
+       let n = [23 , 56 , 89 , 74 , 41];
+       let t = "";
+
+       for(x of n){
+        t += x + " ";
+       }
+       document.write("<br> for/of loop:-" + t);
+
+
+       //while loop
+       let ab= 10;
+       let cd=" "
+       while(ab > 0)  // while(i) can also ne used
+       {
+        cd += " " + ab;
+        ab--;
+       }
+       document.write( "<br>while loop:- " + cd);
+
+       //do while loop
+       let xy= 6;
+       let za=" "
+        do 
+       {
+        za += " " + xy;
+        xy--;
+       }while(xy > 0);
+       document.write( "<br>do While loop:- " + za);
+
+    </script>
+
+</body>
+</html>
