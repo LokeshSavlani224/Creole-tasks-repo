@@ -13,11 +13,15 @@
     <title>Document</title>
 </head>
 <body>
+    enter value for var:-<input type="text" id="var">
+    enter value for let:-<input type="text" id="let">
+    enter value for const:-<input type="text" id="const">
+    <button onclick="variableFunc()">submit</button>
     <script>
-        
-        var a="hello";
-        let b=true;
-        const c=9;
+        function variableFunc() {
+        var a=document.getElementById("var").value;
+        let b=document.getElementById("let").value;
+        const c=document.getElementById("const").value;
 
         var a=10;
         // let b=false;  // it will not execute because let has block as its scope
@@ -51,6 +55,8 @@
        j=10;
 
         document.write(a+" ",e+" ",f+" ",g+" ",h+" ",j);
+
+    }
 
     </script>
 

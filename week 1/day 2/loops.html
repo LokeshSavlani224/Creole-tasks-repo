@@ -7,70 +7,71 @@
     <title>Document</title>
 </head>
 <body>
+    
+        enter number:- <input type="number" id="limit">
+        enter array:- <input type="array" id="array" placeholder="ex: 1,2,3... format">
+        <button onclick="func()">submit</button>
+    
+
     <script>
        
 
-       //for loo[p]
-       let i=0;
-       let v="";
+        function func() {
+         
+       let limit=document.getElementById("limit").value;
+       let array=document.getElementById("array").value;
+       
 
-        for(i ; i<10 ; i++){
-           v += i;
+       console.log(limit,array);
+       //for loo[p]
+       let text1= " ";
+
+        for( var i=0 ; i<limit ; i++){
+           text1 +=" "+ i;
         }
-         document.write(" for loop:-" +i+" ");
+         document.write(" for loop:-"+text1+" ");
             
 
         //for/in loop
-        let arr=[1 , 2 , 3 , 4 , 5];
-        let b = " "
-        for(i in arr ){
-            b += arr[i]+"  ";
+        let text2= " ";
+
+        for(i in array ){
+            text2 += array[i]+"  ";
         }
-        document.write( "<br>for/in loop :-" + b);
-
-
-        //forEach loop 
-        let num=[49 , 22 , 55 , 66 , 99];
-        let txt = " ";
-
-        num.forEach(myFunc);
-       
-       function myFunc(value , index , array){
-         txt += value+" ";
-        }
-        document.write("<br>forEach loop"+ txt);
+        document.write( "<br>for/in loop :-" +text2 );
         
 
         //for/of loop
-       let n = [23 , 56 , 89 , 74 , 41];
-       let t = "";
+        let text3= " ";
 
-       for(x of n){
-        t += x + " ";
+      for(i of array){
+        text3 += i + " ";
        }
-       document.write("<br> for/of loop:-" + t);
+       document.write("<br> for/of loop:-" + text3);
 
 
        //while loop
-       let ab= 10;
-       let cd=" "
-       while(ab > 0)  // while(i) can also ne used
+       let text4= " ";
+       i=limit;
+
+       while(i > 0)  // while(i) can also ne used
        {
-        cd += " " + ab;
-        ab--;
+        text4 += " " + i;
+        i--;
        }
-       document.write( "<br>while loop:- " + cd);
+       document.write( "<br>while loop:-" + text4);
 
        //do while loop
-       let xy= 6;
-       let za=" "
+        
+       let text5= " ";
         do 
        {
-        za += " " + xy;
-        xy--;
-       }while(xy > 0);
-       document.write( "<br>do While loop:- " + za);
+        text5 += " " + limit;
+        limit--;
+       }while(limit > 0);
+       document.write( "<br>do While loop:-" + text5);
 
+    }
     </script>
 
 </body>

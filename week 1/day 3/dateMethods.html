@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>
+        getFullYear()is used to Get year as a four digit number (yyyy)<br>
+        getMonth() is used to Get month as a number (0-11)<br>
+        getDate() is used to Get day as a number (1-31)<br>
+        getDay() is used to	Get weekday as a number (0-6)<br>
+        getHours() is used to	Get hour (0-23)<br>
+        getMinutes() is used to	Get minute (0-59)<br>
+        getSeconds() is used to	Get second (0-59)<br>
+        getMilliseconds() is used to Get millisecond (0-999)<br>
+        getTime() is used to Get time (milliseconds since January 1, 1970)<br>
+    </h4>
+    date:-<input type="date" id="date" placeholder="yyyy-MM-dd">
+    <button onclick="dateFunc()">submit</button>
+    <script>
+        function dateFunc() {
+            
+        let date=document.getElementById("date").value;
+       const d = new Date(date);
+       
+       //console.log(d);
+       let day=d.getDay();
+       document.write(day);
+
+       let year=d.getFullYear();
+       document.write("the year is"+year);
+
+       let month= d.getMonth();
+       document.write("<br>the month is"+month);
+
+       let dates=d.getDate();
+       document.write("<br>the date is"+dates);
+
+       let hours= d.getHours();
+       document.write("<br>the hours are "+hours);
+       
+       let minute= d.getMinutes();
+       document.write("<br>the minutes are "+minute);
+
+       let second= d.getSeconds();
+       document.write("<br>the seconds are"+second);
+       
+       let ms=d.getMilliseconds();
+       document.write("<br>the milliseconds are"+ms);
+
+       let time= d.getTime();
+       document.write("<br>the time tillnow is"+time);
+
+       
+        }
+
+    </script>
+</body>
+</html>

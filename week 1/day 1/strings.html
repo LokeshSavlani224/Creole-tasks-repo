@@ -9,49 +9,49 @@
 <body>
     <p1> JavaScript strings are for storing and manipulating text<br></p1>
     <script>
-        let a="double quoted";
-        let b="single quoted";
-        let c=`backticks`; //you can use ${} in backticks
-        let d=`hello ${1+3}`;//hello 4 (string interpolation is done using ${})
+        let dblQuoted="double quoted";
+        let sglQuoted="single quoted";
+        let bckticks=`backticks`; //you can use ${} in backticks
+        let interpolatedStr=`hello ${1+3}`;//hello 4 (string interpolation is done using ${})
 
+
+        let string=prompt("enter value:",);
        //for length of string
-        document.write(d.length +"<br>"); 
+        document.write(string.length +"<br>"); 
         
         
        //for slice method
-        let e=b.slice(7,13);
-        let f=b.slice(6);
-        let g=b.slice(-5);
-        document.write(e+" <br> ",f+"<br>  ",g+"<br>  ");
+        let slice=string.slice(7,13);
+        document.write(slice+" <br> ");
        
         //for substr()
-        let h=b.substr(6,7);//7 values after 6th positionn are printed
-        document.write(h+"<br>  ");
+        let subString=string.substr(6,7);//7 values after 6th positionn are printed
+        document.write(subString+"<br>  ");
 
         
         //for replace()
-        let i=b.replace("single","xyz");
-        document.write(i+" <br> ");
+        let replaceStr=string.replace("e","x");
+        document.write(replaceStr+" <br> ");
 
         //for replaceAll()
-        let j=b.replaceAll("e" , " x ");
-        document.write(j+" <br> ");
+        let replaceAllStr=string.replaceAll("e" , " x ");
+        document.write(replaceAllStr+" <br> ");
 
         //for toLowerCase()
-        let k=a.toLowerCase();
-        document.write(k+"<br>  ");
+        let lowerCase=string.toLowerCase();
+        document.write(lowerCase+"<br>  ");
 
         //for toUpperCase()
-        let l=a.toUpperCase();
-        document.write(l+"<br> ");
+        let upperCase=string.toUpperCase();
+        document.write(upperCase+"<br> ");
 
         //for concat()
-        let m=c.concat(" abc ",b);
-        document.write(m+" <br> ");
+        let concatStr=string.concat(" abc ",sglQuoted);
+        document.write(concatStr+" <br> ");
 
         //for split()
-        let n=c.split("");
-        document.write(n+" <br> ");
+        let splitStr=string.split("");
+        document.write(splitStr + " <br> ");
 
 
 

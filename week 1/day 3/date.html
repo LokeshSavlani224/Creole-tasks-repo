@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <h3>there are9 ways to represent date</h3>
+1.()
+2.(date string)
+3.(milliseconds)
+4.(year,month)
+5.(year,month,day)
+6.(year,month,day,hours)
+7.(year,month,day,hours,minutes)
+8.(year,month,day,hours,minutes,seconds)
+9.(year,month,day,hours,minutes,seconds,ms)
+
+
+    </p>
+
+    <input type="text" id="IsoDate" placeholder="yyyy-mm-dd">
+    <button onclick="DateEvaluation(event)">submit</button>
+   
+    
+    <h6>ISO Date	"2015-03-25" (The International Standard)
+        Short Date	"03/25/2015"
+        Long Date	"Mar 25 2015" or "25 Mar 2015"</h6>
+    <p id="paragraph"></p>
+    <p id="paragraph1"></p>
+
+
+    <script>
+       
+        function DateEvaluation(event) {
+           const d = new Date();
+           document.getElementById("paragraph").innerHTML =d.toUTCString();
+
+           let IsoDate=document.getElementById("IsoDate").value;
+           const date=new Date(`${IsoDate}`);
+           document.getElementById("paragraph1").innerHTML=date;
+        }
+        
+        
+
+
+    </script>
+</body>
+</html>

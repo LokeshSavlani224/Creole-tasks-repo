@@ -7,15 +7,35 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        function multiply(a){
-            return function(b){
-                return function(c){
-                    return a*b*c;
+    
+        <label>number 1</label>
+        <input type="text" id="num1">
+        <label>number 2</label>
+        <input type="text" id="num2">
+        <label>number 3</label>
+        <input type="text" id="num3">
+    
+        <button onclick="highOrderFunc()">submit</button>
+       
+    
+  <script>
+       
+        function highOrderFunc(){
+           // event.preventDefault();
+            let number1= document.getElementById("num1").value;
+            let number2= document.getElementById("num2").value;
+            let number3= document.getElementById("num3").value;
+             
+            function multiply(num1){
+                return function(num2){
+                    return function(num3){
+                        return num1*num2*num3;
+                    }
                 }
             }
-        }
-        document.write("the currying function output for multiplication is:-" + multiply(2)(3)(4) );
+        document.write("the currying function output for multiplication is:" + multiply(number1)(number2)(number3) );
+
+    }
     </script>
 </body>
 </html>

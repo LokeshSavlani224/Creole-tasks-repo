@@ -16,18 +16,22 @@
     <title>Document</title>
 </head>
 <body>
+    
     <script>
-        let a="hello" //string
-        let b=10;//number 
-        let c=123456789012345678901234567890; //number but bigInt
-        let d=true; //boolean
-        let e=undefined; //undefined
-        let f=null; //object with null value
-        let g={a:"b", c:"d", e:"f", g:"h"};//object with 4 properties a,c,e,g
-        let h=Number.isSafeInteger(c); //false as it is BigInt 
+        let string="hello" //string
+        let number1=10;//number 
+        let bigNum=123456789012345678901234567890; //number but bigInt
+        let boolean=true; //boolean
+        //let undefined=undefined; //undefined
+        let nullVal=null; //object with null value
+        let object={a:"b", c:"d", e:"f", g:"h"};//object with 4 properties a,c,e,g
+        let safeInt=Number.isSafeInteger(bigNum); //false as it is BigInt 
 
-        document.write(typeof(a)+" ",typeof(b)+" ",typeof(c)+" ",typeof(d)+" ",typeof(e)+" ",typeof(f)+" ",typeof(g)+" ",h);
-
+        document.write(typeof(string)+" ",typeof(number1)+" ",typeof(bigNum)+" ",typeof(boolean)+" ",typeof(undefined)+" ",typeof(nullVal)+" ",typeof(object)+" ",safeInt);
+         
+       
+    //    let check=prompt("enter value to check its datatype:",);
+    //    document.write("<br>"+typeof(check));
 
     </script>
 </body>

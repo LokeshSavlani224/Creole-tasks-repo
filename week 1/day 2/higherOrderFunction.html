@@ -7,11 +7,29 @@
     <title>Document</title>
 </head>
 <body>
+        <!-- <label>enter operation</label>
+        <input type="text" id="operation" placeholder="sum , substraction , multiplication , division"> -->
+        <label>enter initial value</label>
+        <input type="text" id="initialValue" placeholder="initial value">
+        <label>string of numbers to which operationis performed</label>
+        <input type="text" id="num1" placeholder="enter number 1">
+        <input type="text" id="num2" placeholder="enter number 2">
+        <button onclick="calculate()">submit</button>
+    
     <script>
-        function calc(op,iniVal,nums){
+    function calculate() {
+       // event.preventDefault();
+       // let opr=document.getElementById("operation").value;
+        let initialValue=Number(document.getElementById("initialValue").value);
+        let num1=Number(document.getElementById("num1").value);
+        let num2=Number(document.getElementById("num2").value);
+
+        //console.log(operation, initialValue,num1,num2);
+
+        function calculationOF(operation,iniVal,numbers){
             let total=iniVal;
-            for(const num of nums){
-                total=op(total,num);
+            for(const num of numbers){
+                total=operation(total,num);
             }
             return total;
         }
@@ -20,18 +38,20 @@
             return a+b;
         }
 
-        function sub(a,b){
+        function substaction(a,b){
             return a-b;
         }
 
-        function mul(a,b){
+        function multiplication(a,b){
             return a*b;
         }
-        function div(a,b){
+        function division(a,b){
             return a/b;
         }
+    
 
-        document.write("the result of the higher order function for parameters is :-"+ calc(mul,1,[2,3,4]));
+        document.write("the result of the higher order function for parameters is :"+ calculationOF(sum,initialValue,[num1,num2]));
+    }
     </script>
 </body>
 </html>

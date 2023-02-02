@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 <body>
-
+<form>
+  number1:-<input type="text" id="getNum1"><br>
+  number2:-<input type="text" id="getNum2"><br>
+  number3:-<input type="text" id="getNum3"><br>
+  number4:-<input type="text" id="getNum4"><br>
+  <button onclick="numberMethods()">submit</button>
+</form>
 <h2>JavaScript Number Methods</h2>
 
 <p>The toPrecision() method returns a string, with a number written with a specified length:</p>
@@ -9,25 +15,41 @@
 <p id="demo"></p>
 
 <script>
-let x = 9.656;
-document.getElementById("demo").innerHTML = 
-  x.toPrecision(1) + "<br>" +
-  x.toPrecision(2) + "<br>" +
-  x.toPrecision(4) + "<br>" +
-  x.toPrecision(6);  
 
-  let y = 123;
-  y.toString();
-  document.write(y+"<br> \n");
 
-  let z = 9.656;
-  z.toExponential(2);
-  document.write(z+"<br>");
 
-  let a=9.565;
-  a.toFixed(2);
-  document.write(a+"<br>");
 
+function numberMethods() {
+
+  let number1 = Number(document.getElementById("getNum1").value);
+  console.log(number1);
+  let number2 = Number(document.getElementById("getNum2").value);
+  console.log(number2);
+  let number3 = Number(document.getElementById("getNum3").value);
+  console.log(number3);
+  let number4 = Number(document.getElementById("getNum4").value);
+  console.log(number4);
+
+{
+  let variable=number1.toPrecision(6); 
+ document.write(variable+"<br>");
+}
+
+ {
+  let variable1=number2.toString();
+  document.write( variable1 + "<br> \n");
+ }
+ 
+ {
+  variable2=number3.toExponential(2);
+  document.write( variable2+"<br>");
+ }
+  
+ {
+  variable3=number4.toFixed(2);
+  document.write( variable3 +"<br>");
+}
+}
 </script>
 
 </body>
