@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>password:-</label>
+    <input type="text" id="password" placeholder="enter password">
+    <label>Confirm Password:-</label>
+    <input type="text" id="cnfPassword" placeholder="Re-enter password">
+    <button id="submit" onclick="confirmPassword()">Submit</button>
+
+    <script>
+        function confirmPassword() {
+              let password = document.getElementById("password").value;
+              let confirmPassword=document.getElementById("cnfPassword").value;
+
+              let promise=new Promise(function(resolve, reject) {
+                if(password==confirmPassword){
+                    resolve(" both passwords are same");
+                }
+                else{
+                    reject("password and confirmPassword didnt match");
+                }
+              } );
+
+              promise.then(function(result){
+                document.write("passwords matched");
+              } 
+              ,function(error){
+                document.write("error occured");
+              }).then( ()=>{
+                console.log("abc");
+              });
+        }
+    </script>
+
+</body>
+</html>
