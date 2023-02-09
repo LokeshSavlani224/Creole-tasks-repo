@@ -4,14 +4,14 @@ days.push("Monday"); //allowed
 console.log(days);
 
 //Readonly array
-const days1: readonly string[] = ["Saturday"];
+const days2: readonly string[] = ["Saturday"];
 //days.push("Sunday");// not allowed
-console.log(days1);
+console.log(days2);
 
 //type interface
 const day = ["Sunday", "Monday", "Tuesday"];
-days.push("Wednesday"); //allowed
+day.push("Wednesday"); //allowed
 //days.push(4);//not allowed
-days.push("Thursday"); //allowed
+day.push("Thursday"); //allowed
 
 console.log(day);
