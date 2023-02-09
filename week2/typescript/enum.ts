@@ -1,4 +1,4 @@
-enum days {
+enum days1 {
   Sunday = 0,
   Monday,
   Tuesday,
@@ -7,5 +7,5 @@ enum days {
   Friday,
   Saturday,
 }
-let today = days.Wednesday;
+let today = days1.Wednesday;
 console.log("today is ", today, "th day");
