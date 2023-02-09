@@ -12,9 +12,9 @@ const PId: id = 1;
 const PName: name = "xyz";
 const PAge: age = 10;
 
-let Student: student = {
+let student2: student = {
   id: PId,
   name: PName,
   age: PAge,
 };
-console.table(Student);
+console.table(student2);
