@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter string:<input type="text" placeholder="enter string" id="str">
+    <button onclick="func()">submit</button>
+    <script>
+        function func() {
+            let str= document.getElementById("str").value;
+            let num= [];
+
+            str= str.split("");
+            for(var i=0; i<str.length; i++) {
+                for(var j=0; j<str.length; j++) {
+                     let x=0;
+                     if(str[i]==str[j]){
+                        x++;
+                     }
+                     num[i]=x;
+                }
+            }
+            console.log(num);
+
+        }
+    
+    </script>
+</body>
+</html>

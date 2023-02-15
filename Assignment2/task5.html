@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  Enter string:<input type="text" id="string" placeholder="enter string">
+  Enter the nth number:<input type="text" id="nth" placeholder="enter n">
+  <button onclick="func()">submit</button>
+
+  <script>
+    function func() {
+        let str=document.getElementById("string").value;
+        let len=str.length;
+        let n=Number(document.getElementById("nth").value);
+        console.log(n,str.charAt(n-1),len);
+        if(n>len || n<1){
+            alert("number entered is not available");
+        }
+        else{
+            if(str.charAt(n-1) == 'a' || 
+            str.charAt(n-1) =='e' || 
+            str.charAt(n-1) =='i' ||
+            str.charAt(n-1) == 'o'|| 
+            str.charAt(n-1) == 'u'){
+                document.write("Vowel:the nth element is vowel");
+            }
+            else{
+                document.write("Consonant:the nth element is consonant");
+            }
+
+    }
+}
+  </script>
+</body>
+</html>

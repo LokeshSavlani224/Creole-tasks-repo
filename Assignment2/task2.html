@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter string:<input type="text" placeholder="enter string" id="str">
+    Enter element to be removed:
+    <input type="text" placeholder="Enter element" id="element">
+    <button onclick="func()">submit</button>
+    <script>
+        function func() {
+            let str=document.getElementById("str").value;
+            let output = "";
+            let element = document.getElementById("element").value;
+            str=str.split(" ");
+            for(let i=0; i<str.length; i++){
+            let abc=str[i].split("");
+            for(j=0; j<abc.length ;j++){
+                if(abc[j]== element){
+                    continue;
+                }
+                else {
+                    output += abc[j];
+                }
+            }
+            output += " ";
+        }
+        document.write(output);
+        }
+    </script>
+</body>
+</html>

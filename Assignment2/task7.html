@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter string:<input type="text" id="str" placeholder="enter string">
+    <button onclick="func()">submit</button>
+    <script>
+        function func(){
+            var x= document.getElementById("str").value;
+           // var trueFalse = document.getElementById("trueFalse").value;
+            let text=x.split("");
+            let asc=text.sort().join("");
+            let desc=text.sort().reverse().join("");
+            
+            if(x==asc){
+                document.write("true");
+            }
+            else if(x==desc){
+                document.write("false");
+            }
+            else{
+               document.write("it is neithrt true nor false");
+            }
+        }
+    </script>
+</body>
+</html>
