@@ -11,21 +11,31 @@
     <button onclick="func()">submit</button>
     <script>
         function func() {
+            
             let str= document.getElementById("str").value;
-            let num= [];
+            str=str.split("").sort().join("");
+            function maxChar(str) {
+            const obj = {};
+            let max = 0;
+            let repeatedChar = '';
 
-            str= str.split("");
-            for(var i=0; i<str.length; i++) {
-                for(var j=0; j<str.length; j++) {
-                     let x=0;
-                     if(str[i]==str[j]){
-                        x++;
-                     }
-                     num[i]=x;
+                for (let char of str) {
+                    if (obj[char]) {
+                        obj[char]++;
+                    } else {
+                        obj[char] = 1;
+                    }
+                    console.log(obj[char]);
+                }                
+                for (let char in obj) {
+                    if (obj[char] > max) {
+                    max = obj[char];
+                    repeatedChar = char;
+                    }
                 }
+                return repeatedChar;
             }
-            console.log(num);
-
+            document.write(maxChar(str));
         }
     
     </script>

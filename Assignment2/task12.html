@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str=`"The unexamined life is not worth living." - Socrates`;
+        let output = [];
+        str = str.split(`"`);
+        output.push(str[1]);
+
+        let b = str[2].split("-");
+        output.push(b[1]);
+        
+        document.write(output);
+        // console.log(output);
+        
+    </script>
+</body>
+</html>

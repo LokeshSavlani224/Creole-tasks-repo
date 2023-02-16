@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter string:<input type="text" placeholder="enter string" id="str">
+    Enter num:<input type="number" placeholder="Enter number" id="num"> 
+    <button onclick="func()">submit</button>
+    <script>
+        function func() {
+            let str= document.getElementById("str").value;
+            let n=document.getElementById("num").value;
+            var obj={}
+
+            for(x = 0; x < str.length; x++) {
+                var test = str.charAt(x)
+                obj[test] = (isNaN(obj[test]) ? 1 : obj[test] + 1);
+            }
+                 // console.log(obj);
+            for(x in obj){
+                if(obj[x]==3){
+                    document.write(x);
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>
